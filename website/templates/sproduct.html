@@ -1,0 +1,188 @@
+{% extends "base.html" %} {% block title %}sproduct{% endblock %}
+ {% block content %}
+<link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+<style>
+.small-img-group{
+display:flex;
+justify-content:space-between;
+}
+.small-img-col{
+flex-basis:24%;
+cursor:pointer;
+}
+.sproduct select{
+display:block;
+padding:5px 10px;
+}
+.sproduct input{
+width:50px;
+height:40px;
+padding-left:10px;
+font-size:16px;
+margin-right:10px;
+}
+.sproduct input:focus{
+outline:none;
+}
+.but-btn{
+background:#fb774b;
+opacity:1;
+transition:0.3s all;
+color:white;
+padding:5px 10px;
+border:none;
+}
+
+
+</style>
+<section class="container sproduct my-5 pt-2">
+    <div class="row mt-5">
+        <div class="col-lg-5 col-md-12 col-12">
+            <img class="img-fluid w-100 pb-1" src="static/images/red/1.jpg" height="270px",width="300px" id="MainImg">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="static/images/red/1.jpg" width="100%" class="small-img">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="static/images/red/2.jpg" width="100%" class="small-img">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="static/images/red/3.jpg" width="100%" class="small-img">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="static/images/red/4.jpg" width="100%" class="small-img">
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12">
+            <h6>Home / Our Offers</h6>
+            <h3 class="py-4">Red Velvet Cake</h3>
+            <h2>₹660.00</h2>
+            <select class="my-3">
+                 <option>Select Weight</option>
+                 <option>0.5Kg</option>
+                 <option>1Kg</option>
+                 <option>2Kg</option>
+                 <option>3kg</option>
+                 <option>4kg</option>
+            </select>
+            <input type="number" value="1">
+            <button class="but-btn">Add To Cart</button>
+            <h4 class="mt-5 mb-5">Product Details</h4>
+            <span>Here is a perfect and rich red velvet cake that will tickle your taste buds and leave your mouth watering by its look. Moist, tender, and fluffy in texture, this scrumptious red velvet cake is enriched with caramel and topped with dark chocolates. Whether you want to brighten your birthday or wish someone a very happy anniversary or happy Valentine's Day, this cake will be a perfect choice.</span>
+
+        </div>
+    </div>
+
+</section>
+<section id="pastry" class="my-5">
+  <div class="container text-center mt-5 py-5">
+    <h3  text="">Here You Can See Our Best Selling Pastries</h3>
+    <hr class="mx-auto">
+
+  </div>
+  <div class="row mx-auto container-fluid">
+
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="image-fluid mb-3" src="static/images/cakes/8.jpg" height="270px",width="300px">
+        <div class="star">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Tempting Truffle Pastry-6 Pcs</h5>
+        <h4 class="p-price">₹599.00</h4>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="image-fluid mb-3" src="static/images/cakes/9.jpg" height="270px",width="300px">
+        <div class="star">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Delicious Butterscotch Pastry- 6 Pcs</h5>
+        <h4 class="p-price">₹599.00</h4>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="image-fluid mb-3" src="static/images/cakes/10.jpg" height="270px",width="300px">
+        <div class="star">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Creamy Chocolate Pastry- 6 Pcs</h5>
+        <h4 class="p-price">₹570.00</h4>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="image-fluid mb-3" src="static/images/cakes/11.png" height="270px",width="300px">
+        <div class="star">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Black Forest Pastry- 6 Pcs</h5>
+        <h4 class="p-price">₹599.00</h4>
+        <button  class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+
+</section>
+<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+<script>
+    var MainImg = document.getElementById('MainImg');
+    var smallimg = document.getElementsByClassName('small-img');
+
+    smallimg[0].onclick = function(){
+    MainImg.src = smallimg[0].src;
+    }
+    smallimg[1].onclick = function(){
+    MainImg.src = smallimg[1].src;
+    }
+    smallimg[2].onclick = function(){
+    MainImg.src = smallimg[2].src;
+    }
+    smallimg[3].onclick = function(){
+    MainImg.src = smallimg[3].src;
+    }
+</script>
+    {% endblock %}
